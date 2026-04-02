@@ -10,6 +10,7 @@ class HomePage extends StatelessWidget {
   const HomePage({Key? key, this.user}) : super(key: key);
 
   // Fetch all trophy and point data
+  //increased speed by reducing number of reads
   Future<Map<String, dynamic>> fetchAllScores(String uid) async {
     final firestore = FirebaseFirestore.instance;
     final modules = ['M1', 'M2', 'M3', 'M4'];
